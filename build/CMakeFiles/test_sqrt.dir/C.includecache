@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/CProject/include/b.h
+math.h
+-
+
+/home/pi/CProject/src/b.c
+../include/b.h
+/home/pi/CProject/include/b.h
+
+/home/pi/CProject/src/main.c
+../include/b.h
+/home/pi/CProject/include/b.h
+stdio.h
+-
+
